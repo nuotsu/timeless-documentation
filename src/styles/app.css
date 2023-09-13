@@ -3,21 +3,29 @@
 @tailwind utilities;
 
 @layer base {
+	::selection {
+		@apply bg-accent text-white;
+	}
+
 	html {
 		scroll-behavior: smooth;
-		@apply bg-canvas;
+		@apply bg-canvas text-ink;
 	}
 
 	summary {
 		cursor: pointer;
 	}
 
-	code {
+	:not(pre) > code {
 		display: inline-block;
 		padding-inline: .25em .5em;
 		font-size: smaller;
 		text-decoration: inherit;
 		@apply bg-canvas rounded;
+	}
+
+	pre {
+		@apply p-4 bg-canvas rounded;
 	}
 }
 

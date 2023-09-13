@@ -3,7 +3,7 @@ title: Introduction
 ---
 ## What is the Timeless Theme?
 
-*Timeless* is a Shopify Theme (Online Store 2.0) built with simplicity and extensibility in mind, and is built for both merchants and developers.
+*Timeless* is a Shopify Theme (Online Store 2.0) built with simplicity and extensibility in mind, and is built for both [merchants](#for-merchants) and [developers](#for-developers).
 
 ## 🛍️ For Merchants
 
@@ -25,11 +25,11 @@ Additional key features of *Timeless* include:
 
 Like all other themes, *Timeless* comes with all core functionality required for a Shopify Store (obviously).
 
-Unlike most other themes, *Timeless* is a developer-friendly repo using [Tailwind CSS]() for styling and minimal JavaScript for functionality, making it a breeze to maintain and scale.
+Unlike most other themes, *Timeless* is a developer-friendly repo using [Tailwind CSS for styling](/docs/dev/styling) and minimal JavaScript for functionality, making it a breeze to maintain and scale.
 
 Additional key features of *Timeless* include:
 - empty `/assets` directory — No JS, CSS, images, fonts ... nothing!
 - a native CSS approach (`.carousel`) or [Swiper](https://swiperjs.com) for carousel and slider components
-- [`icon.liquid` snippet]() for easy SVG icon rendering
+- [`icon.liquid` snippet](/docs/dev/icons) for easy SVG icon rendering
 
 ... and much more.
