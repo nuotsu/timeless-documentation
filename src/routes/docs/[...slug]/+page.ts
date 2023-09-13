@@ -4,7 +4,6 @@ export const load = async ({ params }) => {
 	const doc = await import(`../../../docs/${ params.slug }.md`)
 
 	if (doc) return {
-		test: 'poop',
 		component: doc.default,
 		metadata: doc.metadata,
 	}

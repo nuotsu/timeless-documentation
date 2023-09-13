@@ -2,4 +2,4 @@
 title: Introduction
 ---
 
-# Introduction
+# {title}
