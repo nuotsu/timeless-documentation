@@ -1,20 +1,16 @@
-<div class="flex <md:flex-col max-w-screen-md mx-auto">
-	<aside>
+<div class="flex <md:flex-col max-w-screen-lg mx-auto">
+	<aside class="w-[12rem] mx-auto p-4 sm:px-8 self-start md:sticky top-0">
 		<a href="/">Timeless Theme</a>
 
-		<nav>
-			<dl>
-				<dt>Docs</dt>
-				<dd><a href="/docs/intro">Introduction</a></dd>
-			</dl>
-		</nav>
+		<Menu/>
 	</aside>
 
-	<main class="grow bg-white">
+	<main class="grow p-4 sm:px-8 bg-white">
 		<slot></slot>
 	</main>
 </div>
 
 <script>
+	import Menu from '$lib/Menu.svelte'
 	import '../styles/app.css'
 </script>

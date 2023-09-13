@@ -5,6 +5,8 @@ export default {
 		extend: {
 			colors: {
 				canvas: '#f3f3f3',
+				ink: '#333',
+				accent: '#1f9d47',
 			},
 			screens: {
 				'<sm': { max: '639px' },
