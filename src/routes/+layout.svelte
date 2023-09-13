@@ -1,4 +1,4 @@
-<div class="flex <md:flex-col max-w-screen-lg mx-auto">
+<div class="flex <md:flex-col max-w-screen-lg mx-auto min-h-[100dvh]">
 	<aside class="w-[12rem] mx-auto p-4 sm:px-8 self-start md:sticky top-0">
 		<a href="/">Timeless Theme</a>
 

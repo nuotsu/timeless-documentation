@@ -1,9 +1,6 @@
 ---
 title: Introduction
 ---
-
-# {title}
-
 ## What is the Timeless Theme?
 
 *Timeless* is a Shopify Theme (Online Store 2.0) built with simplicity and extensibility in mind, and is built for both merchants and developers.
@@ -18,9 +15,9 @@ Additional key features of *Timeless* include:
 - [90+/100 Lighthouse performance scores]()
 - semantic HTML markup for better SEO
 - marketing-focused sections and components, such as:
-  - [scheduled announcements]()
-  - [scheduled promo hero sections]()
-  - [customizable call-to-actions]()
+	- [scheduled announcements]()
+	- [scheduled promo hero sections]()
+	- [customizable call-to-actions]()
 
 ... and much more.
 
