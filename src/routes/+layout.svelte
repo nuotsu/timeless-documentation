@@ -5,12 +5,12 @@
 		<Menu/>
 	</aside>
 
-	<main class="grow p-4 sm:px-8 bg-white">
+	<main class="grow p-4 py-8 sm:px-8 bg-white">
 		<slot></slot>
 	</main>
 </div>
 
-<script>
+<script lang="ts">
 	import Menu from '$lib/Menu.svelte'
 	import '../styles/app.css'
 </script>

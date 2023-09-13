@@ -5,7 +5,7 @@ title: Introduction
 
 *Timeless* is a Shopify Theme (Online Store 2.0) built with simplicity and extensibility in mind, and is built for both merchants and developers.
 
-## For Merchants
+## 🛍️ For Merchants
 
 Like all other themes, *Timeless* comes with a number of core templates and sections to build your store with.
 
@@ -21,7 +21,7 @@ Additional key features of *Timeless* include:
 
 ... and much more.
 
-## For Developers
+## 👨‍💻 For Developers
 
 Like all other themes, *Timeless* comes with all core functionality required for a Shopify Store (obviously).
 

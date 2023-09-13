@@ -2,12 +2,12 @@
 	<h1>{data.metadata.title}</h1>
 
 	{#if data.metadata.file}
-		<p>File: <code>{data.metadata.file}</code></p>
+		<p>📂 <code>{data.metadata.file}</code></p>
 	{/if}
 
 	<svelte:component this={data.component} />
 </div>
 
-<script>
+<script lang="ts">
 	export let data
 </script>

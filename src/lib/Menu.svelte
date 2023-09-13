@@ -4,7 +4,13 @@
 			<summary>{metadata.title}</summary>
 			<ul>
 				{#each entries as entry}
-					<li><a href="{dir}/{entry.slug}">{entry.metadata.title}</a></li>
+					{@const href = `${dir}/${entry.slug}`}
+
+					<li>
+						<a {href} class:font-bold={pathname === href}>
+							{entry.metadata.title}
+						</a>
+					</li>
 				{/each}
 			</ul>
 		</details>
@@ -16,4 +22,6 @@
 	import { page } from '$app/stores'
 
 	const { menu } = $page.data
+
+	$: ({ pathname } = $page.url)
 </script>
