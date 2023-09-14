@@ -24,6 +24,7 @@ declare global {
 			slug: string
 			metadata: {
 				file?: string
+				images?: string[]
 			}
 		}
 

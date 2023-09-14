@@ -9,11 +9,11 @@ file: snippets/tailwind.liquid
 
 The base styles are defined in `snippets/tailwind.liquid`. Think of this file as the main stylesheet (e.g. `base.css`, `theme.css`) for the theme. Feel free to adjust according to your needs.
 
-## Default Build Process
+## No Build Step
 
 Notice *Timeless* uses the [Play CDN](https://tailwindcss.com/docs/installation/play-cdn) by default instead of a typical PostCSS setup. We assume *Timeless* users are not familiar with PostCSS and the build process. The Play CDN is a great way to use Tailwind classes without the need for a build step.
 
-However, it is recommended to configure a build process tailored to your needs, which can be configured using the [Tailwind CLI](https://tailwindcss.com/docs/installation#using-tailwind-cli) along with PostCSS, etc.
+**However**, it is recommended to configure a build process tailored to your needs, which can be configured using the [Tailwind CLI](https://tailwindcss.com/docs/installation#using-tailwind-cli) along with PostCSS, etc.
 
 ## Scoped Styling
 
@@ -23,8 +23,8 @@ Additionally, inside sections files the `#shopify-section-{{ section.id }}` CSS 
 
 ```html
 <style text="text/tailwindcss">
-  #shopify-section-{{ section.id }} {
-    @apply bg-canvas text-ink;
-  }
+	#shopify-section-{{ section.id }} {
+		@apply bg-canvas text-ink;
+	}
 </style>
 ```

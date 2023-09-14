@@ -52,6 +52,18 @@
 }
 
 @layer utilities {
+	.carousel {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+	}
+	.carousel > * {
+		scroll-snap-align: center;
+		flex: 0 0 min(var(--size, 280px), 80vw);
+	}
+
+	/* richtext */
+
 	.rte > * + * {
 		margin-top: 1em;
 	}
