@@ -25,6 +25,8 @@
 	}
 
 	pre {
+		font-size: smaller;
+		overflow-x: auto;
 		@apply p-4 bg-canvas rounded;
 	}
 }

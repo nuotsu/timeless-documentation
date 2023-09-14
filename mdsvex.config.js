@@ -12,7 +12,7 @@ export default defineMDSveXConfig({
 					node.properties.id = slug(extractNodeText(node))
 				}
 			}
-		}]
+		}],
 	]
 })
 

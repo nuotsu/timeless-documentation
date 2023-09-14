@@ -3,14 +3,37 @@ title: Icons
 file: snippets/icon.liquid
 ---
 
-All icons (except for the social logos) are from the [Polaris Shopify Icons](https://polaris.shopify.com/icons) library.
+SVG Icons can be rendered using the `icon.liquid` snippet, courtesy of the [Polaris Shopify Icons](https://polaris.shopify.com/icons) library.
 
 ## Usage
-
-Examples:
 
 ```liquid
 {% render 'icon' with 'cart' %}
 {% render 'icon' with 'chevron-right' %}
 {% render 'icon' with 'twitter' %}
+```
+
+## `.with-icon` utility class
+
+To render SVG icons inline with text, use the `.with-icon` utility class:
+
+*Add-to-cart example*
+
+```html
+<button class="with-icon">
+  Add to cart
+  {% render 'icon' with 'chevron-right' %}
+</button>
+```
+
+*Accordion example*
+
+```html
+<details class="with-accordion">
+  <summary class="with-icon">
+    Lorem ipsum
+    {% render 'icon' with 'chevron-right' %}
+  </summary>
+  ...
+</details>
 ```
