@@ -11,13 +11,17 @@
 			<th>Info</th>
 		{/if}
 
-		<th>Default value</th>
+		{#if hasDefault}
+			<th>Default value</th>
+		{/if}
 	</tr>
 
 	{#each settings as setting}
 		{#if setting.type === 'header'}
 			<tr>
-				<th colspan="5">{setting.content}</th>
+				<th class="text-left" colspan="5">
+					{setting.content}
+				</th>
 			</tr>
 		{:else}
 			<tr class="border-b hover:bg-accent/10">
@@ -47,9 +51,11 @@
 					<td>{setting.info || ''}</td>
 				{/if}
 
-				<td class={/^</g.test(setting.default || '') ? 'text-left whitespace-normal leading-snug' : ''}>
-					<code>{setting.default || ''}</code>
-				</td>
+				{#if hasDefault}
+					<td class={/^</g.test(setting.default || '') ? 'text-left whitespace-normal leading-snug' : ''}>
+						<code>{setting.default || ''}</code>
+					</td>
+				{/if}
 			</tr>
 		{/if}
 	{/each}
@@ -72,4 +78,5 @@
 
 	const hasInfo = settings.some(setting => setting.info)
 	const hasValues = settings.some(setting => ['select', 'range'].includes(setting.type))
+	const hasDefault = settings.some(setting => setting.default)
 </script>

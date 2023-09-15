@@ -1,9 +1,9 @@
-<header class="text-center">
+<section class="text-center">
 	<h1 class="flex flex-wrap gap-x-3 items-center justify-center h1 mb-[1em]">
 		<strong>🕰️</strong>
 		Timeless Shopify Theme
 	</h1>
-</header>
+</section>
 
 <section>
 	<Menu linkClass="link" />

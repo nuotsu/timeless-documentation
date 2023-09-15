@@ -1,4 +1,4 @@
-<div class="max-w-screen-sm mx-auto rte [&_a]:link">
+<article class="max-w-screen-sm mx-auto rte [&_a]:link">
 	<h1>{title}</h1>
 
 	{#if file}
@@ -9,12 +9,20 @@
 		<ImageCarousel {images} />
 	{/if}
 
-	<svelte:component this={data.component} />
+	<div class="rte">
+		<svelte:component this={data.component} />
+	</div>
 
 	{#if showSchema && !!data.sectionSchema}
 		<SectionSchema schema={data.sectionSchema} />
 	{/if}
-</div>
+</article>
+
+<style>
+	div:empty::before {
+		content: 'Documentation coming soon... ⏳';
+	}
+</style>
 
 <script lang="ts">
 	import ImageCarousel from '$lib/ImageCarousel.svelte'
