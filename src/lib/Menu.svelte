@@ -3,7 +3,7 @@
 		<details open>
 			<summary>{metadata.title}</summary>
 			<ul>
-				{#each entries as entry}
+				{#each sort(entries) as entry}
 					{@const href = `${dir}/${entry.slug}`}
 
 					<li>
@@ -24,4 +24,8 @@
 	const { menu } = $page.data
 
 	$: ({ pathname } = $page.url)
+
+	function sort(arr: Documentation.Page[] = []) {
+		return arr.sort((a, b) => Number(a.metadata.order) - Number(b.metadata.order))
+	}
 </script>

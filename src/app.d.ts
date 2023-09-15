@@ -24,6 +24,7 @@ declare global {
 			slug: string
 			metadata: {
 				file?: string
+				showSchema?: boolean
 				images?: string[]
 			}
 		}
@@ -32,6 +33,34 @@ declare global {
 			dir: string
 			entries: Page[]
 		}
+	}
+
+	namespace Shopify {
+		interface SectionSchema {
+			name: string
+			tag?: string
+			class?: string
+			settings: SectionSchemaSetting[]
+			blocks?: {
+				type: string
+				name: string
+				settings: SectionSchemaSetting[]
+			}[]
+			disabled_on?: any
+			enabled_on?: any
+			presets?: any
+		}
+
+		interface SectionSchemaSettingBase {
+			type: string
+			content?: string
+			id: string
+			label: string
+			info?: string
+			default?: string
+		}
+
+		type SectionSchemaSetting = SectionSchemaSettingCollection & Record<string, any>
 	}
 }
 
