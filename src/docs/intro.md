@@ -8,7 +8,7 @@ title: Introduction
 
 ## 🛍️ For Merchants
 
-Like all other themes, *Timeless* comes with a number of core templates and sections to build your store with.
+Like all other themes, *Timeless* comes with a number of core templates and [sections](/docs/sections) to build your store with.
 
 Unlike most other themes, *Timeless* utilizes a number of advanced and newest features of Shopify, like [product filters](https://help.shopify.com/en/manual/online-store/themes/customizing-themes/storefront-filters) and [color schemes](https://help.shopify.com/en/manual/online-store/themes/theme-structure/color-scheme), to have granual control over your store's look and feel and provide a better shopping experience for your customers.
 

@@ -1,28 +1,54 @@
-<tbody>
-	<tr class="border-b [&_th]:whitespace-nowrap">
-		<th>Label</th>
-		<th>Schema type</th>
-		<th>Info</th>
+<tbody class="text-sm whitespace-nowrap">
+	<tr class="border-b">
+		<th>Setting</th>
+		<th>Type</th>
+
+		{#if hasValues}
+			<th>Values</th>
+		{/if}
+
+		{#if hasInfo}
+			<th>Info</th>
+		{/if}
+
 		<th>Default value</th>
 	</tr>
 
-	{#each settings as s}
-		{#if s.type === 'header'}
+	{#each settings as setting}
+		{#if setting.type === 'header'}
 			<tr>
-				<th colspan="4">{s.content}</th>
+				<th colspan="5">{setting.content}</th>
 			</tr>
 		{:else}
 			<tr class="border-b hover:bg-accent/10">
-				<th class="text-left font-normal" class:whitespace-nowrap={s.label}>
-					{s.label}
+				<th class="text-left font-normal" class:whitespace-nowrap={setting.label}>
+					{setting.label}
 				</th>
 
-				<td><code>{s.type}</code></td>
+				<td><code>{setting.type}</code></td>
 
-				<td>{s.info || ''}</td>
+				{#if hasValues}
+					<td>
+						{#if setting.options}
+							<ul class="text-left !leading-none">
+								{#each (setting.options) as option}
+									<li>{option.label}</li>
+								{/each}
+							</ul>
+						{/if}
 
-				<td class:text-left={/^</g.test(s.default)}>
-					<code>{s.default || ''}</code>
+						{#if setting.min !== undefined || setting.max !== undefined}
+							<span>{[setting.min, 'n', setting.max].filter(String).join(' < ')}</span>
+						{/if}
+					</td>
+				{/if}
+
+				{#if hasInfo}
+					<td>{setting.info || ''}</td>
+				{/if}
+
+				<td class={/^</g.test(setting.default || '') ? 'text-left whitespace-normal leading-snug' : ''}>
+					<code>{setting.default || ''}</code>
 				</td>
 			</tr>
 		{/if}
@@ -41,4 +67,9 @@
 
 <script lang="ts">
 	export let settings: Shopify.SectionSchemaSetting[]
+
+	$: settings
+
+	const hasInfo = settings.some(setting => setting.info)
+	const hasValues = settings.some(setting => ['select', 'range'].includes(setting.type))
 </script>

@@ -82,7 +82,7 @@
 
 	.rte :is(ul, ol) {
 		list-style: initial;
-		margin-left: 1.5em;
+		padding-left: 1.5em;
 	}
 
 	.rte :is(ul, ol) li {

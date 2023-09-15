@@ -3,8 +3,13 @@ import type { PageLoad } from './$types'
 import getSectionSchema from '$lib/getSectionSchema'
 
 export const load: PageLoad = async ({ params }) => {
+	const slug =
+		params.slug === '' ? 'index' :
+		params.slug === 'sections' ? 'sections/index' :
+		params.slug
+
 	const modules = import.meta.glob('../../../docs/**/*.md')
-	const doc = await modules[`../../../docs/${ params.slug }.md`]() as {
+	const doc = await modules[`../../../docs/${ slug }.md`]() as {
 		default: any
 		metadata: Documentation.Page['metadata']
 	}

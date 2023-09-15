@@ -51,16 +51,20 @@ declare global {
 			presets?: any
 		}
 
-		interface SectionSchemaSettingBase {
+		interface SectionSchemaSetting {
 			type: string
 			content?: string
 			id: string
 			label: string
+			options?: {
+				value: string
+				label: string
+			}[]
+			min?: number
+			max?: number
 			info?: string
 			default?: string
 		}
-
-		type SectionSchemaSetting = SectionSchemaSettingCollection & Record<string, any>
 	}
 }
 
