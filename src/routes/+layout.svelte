@@ -1,8 +1,11 @@
 <div class="flex <md:flex-col max-w-screen-lg mx-auto min-h-[100dvh]">
-	<aside class="w-[12rem] mx-auto p-4 sm:px-8 self-start md:sticky top-0">
-		<a href="/">Timeless Theme</a>
+	<aside class="grid gap-4 w-[12rem] mx-auto p-4 sm:px-8 self-start md:sticky top-0">
+		<a class="grid text-center" href="/">
+			<strong class="text-4xl">🕰️</strong>
+			<strong>Timeless Theme</strong>
+		</a>
 
-		<Menu/>
+		<Menu linkClass="hover:underline decoration-dotted" />
 	</aside>
 
 	<main class="grow p-4 py-8 sm:px-8 bg-white">
