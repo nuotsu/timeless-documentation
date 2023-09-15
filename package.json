@@ -8,7 +8,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"img-optim": "mogrify -resize 1000x -format webp static/**/*.png && rm static/**/*.png"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
