@@ -2,7 +2,7 @@
 
 <div class="overflow-x-auto <md:full-width <md:px-4 <md:pb-4">
 	<table>
-		<SectionSchemaSetting settings={schema.settings} />
+		<SchemaSetting settings={schema.settings} />
 	</table>
 </div>
 
@@ -20,7 +20,7 @@
 						</th>
 					</tr>
 				</thead>
-				<SectionSchemaSetting settings={block.settings} />
+				<SchemaSetting settings={block.settings} />
 			</table>
 		</div>
 	{/each}
@@ -38,9 +38,9 @@
 </style>
 
 <script lang="ts">
-	import SectionSchemaSetting from './SectionSchemaSetting.svelte'
+	import SchemaSetting from './SchemaSetting.svelte'
 
-	export let schema: Shopify.SectionSchema
+	export let schema: Shopify.Schema
 
 	$: schema
 </script>

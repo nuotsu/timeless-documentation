@@ -88,4 +88,13 @@
 	.rte :is(ul, ol) li {
 		margin-top: .25em;
 	}
+
+	.rte > p > img:only-child {
+		@apply bg-canvas rounded;
+	}
+
+	.rte > p:has(> img:only-child) + p:has(> em:only-child) {
+		text-align: center;
+		@apply mt-2 text-neutral-400 text-sm;
+	}
 }

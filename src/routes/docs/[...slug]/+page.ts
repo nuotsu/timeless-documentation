@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit'
 import type { PageLoad } from './$types'
-import getSectionSchema from '$lib/getSectionSchema'
+import getSchema from '$lib/getSchema'
 
 export const load: PageLoad = async ({ params }) => {
 	const slug =
@@ -21,7 +21,7 @@ export const load: PageLoad = async ({ params }) => {
 		metadata: doc.metadata,
 
 		sectionSchema: doc.metadata.showSchema
-			? getSectionSchema(doc.metadata.file)
+			? getSchema(doc.metadata.file, slug.includes('sections'))
 			: null
 	}
 }

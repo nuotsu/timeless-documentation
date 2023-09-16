@@ -36,22 +36,24 @@ declare global {
 	}
 
 	namespace Shopify {
-		interface SectionSchema {
+		interface Schema {
 			name: string
 			tag?: string
 			class?: string
-			settings: SectionSchemaSetting[]
+			settings: SchemaSetting[]
 			blocks?: {
 				type: string
 				name: string
-				settings: SectionSchemaSetting[]
+				settings: SchemaSetting[]
 			}[]
 			disabled_on?: any
 			enabled_on?: any
 			presets?: any
+			definition?: SchemaSetting[]
+			role?: Record<string, string>
 		}
 
-		interface SectionSchemaSetting {
+		interface SchemaSetting {
 			type: string
 			content?: string
 			id: string

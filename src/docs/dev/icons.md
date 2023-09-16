@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: Icons
 file: snippets/icon.liquid
 ---
@@ -18,7 +18,7 @@ SVG Icons can be rendered using the `icon.liquid` snippet, courtesy of the [Pola
 
 To render SVG icons inline with text, use the `.with-icon` utility class:
 
-*Add-to-cart example*
+_Add-to-cart example_
 
 ```html
 <button class="with-icon">
@@ -27,7 +27,7 @@ To render SVG icons inline with text, use the `.with-icon` utility class:
 </button>
 ```
 
-*Accordion example*
+_Accordion example_
 
 ```html
 <details class="with-accordion">
