@@ -1,4 +1,4 @@
-<tbody class="text-sm whitespace-nowrap">
+<tbody class="whitespace-nowrap">
 	<tr class="border-b">
 		<th>Setting</th>
 		<th>Type</th>
@@ -10,11 +10,11 @@
 
 	{#each settings as setting}
 		{#if setting.type === 'header'}
-			<tr>
+			<tr class="border-none">
 				<th class="text-left" colspan="5">{setting.content}</th>
 			</tr>
 		{:else}
-			<tr class="border-b hover:bg-accent/10">
+			<tr>
 				<th class="text-left font-normal" class:whitespace-nowrap={setting.label}>
 					{#if setting.type === 'color_scheme_group'}
 						Color scheme group
@@ -60,13 +60,7 @@
 </tbody>
 
 <style lang="postcss">
-	tr:hover code {
-		@apply bg-white;
-	}
 
-	tbody tr:hover code {
-		@apply bg-white;
-	}
 </style>
 
 <script lang="ts">

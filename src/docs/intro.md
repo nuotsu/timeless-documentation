@@ -10,7 +10,7 @@ _Timeless_ is a Shopify Theme (Online Store 2.0) built with simplicity and exten
 
 Like all other themes, _Timeless_ comes with a number of core templates and [sections](/docs/sections) to build your store with.
 
-Unlike most other themes, _Timeless_ utilizes a number of advanced and newest features of Shopify, like [product filters](https://help.shopify.com/en/manual/online-store/themes/customizing-themes/storefront-filters) and [color schemes](https://help.shopify.com/en/manual/online-store/themes/theme-structure/color-scheme), to have granual control over your store's look and feel and provide a better shopping experience for your customers.
+Unlike most other themes, _Timeless_ utilizes a number of advanced and newest features of Shopify, like [product filters](https://help.shopify.com/en/manual/online-store/themes/customizing-themes/storefront-filters) and [color schemes](/docs/global-styles#color-schemes), to have granual control over your store's look and feel and provide a better shopping experience for your customers.
 
 Additional key features of _Timeless_ include:
 - [90+/100 Lighthouse performance scores]()

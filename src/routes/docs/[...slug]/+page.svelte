@@ -14,7 +14,7 @@
 	</div>
 
 	{#if showSchema && !!data.sectionSchema}
-		<SectionSchema schema={data.sectionSchema} />
+		<Schema schema={data.sectionSchema} />
 	{/if}
 </article>
 
@@ -26,7 +26,7 @@
 
 <script lang="ts">
 	import ImageCarousel from '$lib/ImageCarousel.svelte'
-	import SectionSchema from '$lib/SectionSchema.svelte'
+	import Schema from '$lib/Schema.svelte'
 	import type { PageData } from './$types'
 
 	export let data: PageData

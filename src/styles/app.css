@@ -29,6 +29,19 @@
 		overflow-x: auto;
 		@apply p-4 bg-canvas rounded;
 	}
+
+	table {
+		@apply text-center text-sm;
+	}
+	table :is(th, td) {
+		@apply py-2 px-4;
+	}
+	tr {
+		@apply border-b hover:bg-accent/10;
+	}
+	tr:hover code {
+		@apply bg-white;
+	}
 }
 
 @layer components {
