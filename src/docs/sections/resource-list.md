@@ -12,4 +12,4 @@ images:
 
 ## Use case
 
-The *Resource list* section displays a list of resources, mainly being products and collections. Customizations include the number of columns, a textual content area above the resources and a color schema.
+The *Resource list* section displays a list of resources, mainly being products and collections. Customizations include the number of columns, a textual content area above the resources and a color scheme.

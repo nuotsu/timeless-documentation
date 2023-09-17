@@ -29,7 +29,7 @@ Like all other themes, _Timeless_ comes with all core functionality required for
 Unlike most other themes, _Timeless_ is a developer-friendly repo that uses [Tailwind CSS for styling](/docs/dev/styling) and minimal JavaScript, making it a breeze to maintain and scale.
 
 Additional key features of _Timeless_ include:
-- empty `/assets` directory — No JS, CSS, images, fonts ... nothing!
+- empty `/assets` directory -- No JS, CSS, images, fonts ... nothing!
 - ready-to-use helper classes and components:
 	- a native CSS (`.carousel`) class and [Swiper](https://swiperjs.com) integration for carousel/slider components
 	- [`icon.liquid` snippet](/docs/dev/icons) for easy SVG icon rendering

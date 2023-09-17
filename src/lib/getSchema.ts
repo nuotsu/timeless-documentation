@@ -5,8 +5,8 @@ const octokit = new Octokit({
 	auth: PUBLIC_GITHUB_TOKEN
 })
 
-export default async (file?: string, section: boolean = true) => {
-	if (!file) return null
+async function getContent(file?: string) {
+	if (!file) return
 
 	const content = await octokit.rest.repos.getContent({
 		owner: 'nuotsu',
@@ -18,16 +18,21 @@ export default async (file?: string, section: boolean = true) => {
 		}
 	})
 
-	if (content.status !== 200) return null
+	if (content.status !== 200) return
 
-	const contents = atob((content.data as any).content)
-		.replace(/[\n\t]/g, '')
+	return atob((content.data as any).content).replace(/[\n\t]/g, '')
+}
 
-	if (!!section) {
-		const { schema = '{}' } = /\{% schema %\}(?<schema>.+)\{% endschema %\}/.exec(contents)?.groups ?? {}
+export async function getSectionSchema(file?: string) {
+	const contents = await getContent(file) || ''
 
-		return JSON.parse(schema) as Shopify.Schema
-	}
+	const { schema = '{}' } = /\{% schema %\}(?<schema>.+)\{% endschema %\}/.exec(contents)?.groups ?? {}
 
-	return (JSON.parse(contents) as Shopify.Schema[])[1]
+	return JSON.parse(schema) as Shopify.Schema
+}
+
+export async function getSettingSchema(file?: string) {
+	const contents = await getContent(file) || ''
+
+	return JSON.parse(contents) as Shopify.Schema[]
 }

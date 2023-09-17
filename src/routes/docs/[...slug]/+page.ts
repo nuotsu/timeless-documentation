@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit'
 import type { PageLoad } from './$types'
-import getSchema from '$lib/getSchema'
+import { getSectionSchema, getSettingSchema } from '$lib/getSchema'
 
 export const load: PageLoad = async ({ params }) => {
 	const slug =
@@ -20,8 +20,12 @@ export const load: PageLoad = async ({ params }) => {
 		component: doc.default,
 		metadata: doc.metadata,
 
-		sectionSchema: doc.metadata.showSchema
-			? getSchema(doc.metadata.file, slug.includes('sections'))
-			: null
+		sectionSchema: doc.metadata.showSchema && slug.startsWith('sections')
+			? getSectionSchema(doc.metadata.file)
+			: null,
+
+		settingSchema: doc.metadata.showSchema && slug === 'global-styles'
+			? getSettingSchema(doc.metadata.file)
+			: null,
 	}
 }

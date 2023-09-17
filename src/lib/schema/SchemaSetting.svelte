@@ -29,7 +29,7 @@
 					<td>
 						{#if setting.options}
 							<ul class="text-left !leading-none">
-								{#each (setting.options) as option}
+								{#each setting.options as option}
 									<li>{option.label}</li>
 								{/each}
 							</ul>
@@ -45,12 +45,12 @@
 					<td class="whitespace-normal text-xs">{setting.info || ''}</td>
 				{/if}
 
-				{#if hasDefault && setting.default}
-					<td class={/^</g.test(setting.default) ? 'text-left whitespace-normal leading-snug' : ''}>
-						{#if /^ð/.test(setting.default)}
+				{#if hasDefault}
+					<td class={/^</g.test(setting.default || '') ? 'text-left whitespace-normal leading-snug' : ''}>
+						{#if /^ð/.test(setting.default || '')}
 							<code>👍</code>
 						{:else}
-							<code>{setting.default}</code>
+							<code>{setting.default || ''}</code>
 						{/if}
 					</td>
 				{/if}
