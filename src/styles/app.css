@@ -57,6 +57,11 @@
 	.h5,
 	.h6 { @apply _h font-bold; }
 
+	.technical {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
 	/* ctas */
 
 	.link {
@@ -94,7 +99,7 @@
 	.rte h6 { @apply h6; }
 
 	.rte :is(ul, ol) {
-		list-style: initial;
+		list-style: revert;
 		padding-left: 1.5em;
 	}
 
