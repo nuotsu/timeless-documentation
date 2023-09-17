@@ -1,11 +1,15 @@
 {#if schema}
-	<h2>⚙️ Schema Settings</h2>
+	<hr>
 
-	<div class="overflow-x-auto <md:full-width <md:px-4 <md:pb-4">
-		<table class="min-w-full">
-			<SchemaSetting settings={schema.settings} />
-		</table>
-	</div>
+	<details>
+		<summary class="h2">⚙️ Schema Settings</summary>
+
+		<div class="overflow-x-auto <md:full-width <md:px-4 <md:pb-4">
+			<table class="min-w-full">
+				<SchemaSetting settings={schema.settings} />
+			</table>
+		</div>
+	</details>
 
 	{#if schema.blocks}
 		<BlockSchema blocks={schema.blocks} />

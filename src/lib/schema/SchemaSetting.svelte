@@ -11,8 +11,15 @@
 	{#each settings as setting}
 		{#if setting.type === 'header'}
 			<tr class="border-none">
-				<th class="text-left" colspan="5">{setting.content}</th>
+				<th class="text-left font-normal" colspan="5">
+					<b>{setting.content}</b>
+
+					{#if setting.info}
+						<p class="text-xs whitespace-normal">{setting.info}</p>
+					{/if}
+				</th>
 			</tr>
+
 		{:else}
 			<tr>
 				<th class="text-left font-normal" class:whitespace-nowrap={setting.label}>
@@ -56,6 +63,7 @@
 				{/if}
 			</tr>
 		{/if}
+
 	{/each}
 </tbody>
 

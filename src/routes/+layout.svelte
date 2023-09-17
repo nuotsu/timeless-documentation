@@ -4,7 +4,7 @@
 		<strong>Timeless Theme</strong>
 	</a>
 
-	<Menu linkClass="hover:underline decoration-dotted" />
+	<Menu linkClass="hover:underline decoration-dotted" closedOnMobile />
 </header>
 
 <main class="grow p-4 py-8 sm:px-8 bg-white">
