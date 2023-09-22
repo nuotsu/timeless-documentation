@@ -6,7 +6,7 @@
       <table class="min-w-full">
         <thead>
           <tr class="border-none">
-            <th class="text-left font-normal" colspan="4">
+            <th class="text-center font-normal" colspan="4">
               <strong>{block.name}</strong>:
               <code>{block.type}</code>
             </th>

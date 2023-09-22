@@ -5,7 +5,7 @@
 		<details {open}>
 			<summary class="technical text-sm text-neutral-400 hover:text-accent">{metadata.title}</summary>
 
-			<ul class="grid">
+			<ul class="grid anim-fade-b">
 				{#each sort(entries) as entry}
 					{@const href = `${dir}/${entry.slug}`}
 
@@ -22,11 +22,11 @@
 			</ul>
 		</details>
 	{/each}
-
 </nav>
 
 <script lang="ts">
 	import { page } from '$app/stores'
+	import { browser } from '$app/environment'
 	import { twMerge } from 'tailwind-merge'
 
 	export let
@@ -44,7 +44,10 @@
 	let open = true
 
 	function closeOnMobile() {
+		if (!browser) return
 		if (window.matchMedia('(max-width: 768px)').matches) open = false
 		else open = true
 	}
+
+	closedOnMobile && closeOnMobile()
 </script>

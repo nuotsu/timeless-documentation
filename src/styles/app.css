@@ -36,10 +36,10 @@
 	table :is(th, td) {
 		@apply py-2 px-4;
 	}
-	tr {
+	:not(thead) > tr {
 		@apply border-b hover:bg-accent/10;
 	}
-	tr:hover code {
+	:not(thead) > tr:hover code {
 		@apply bg-white;
 	}
 
@@ -143,6 +143,35 @@
 	}
 
 	/* anims */
+
+	@keyframes fade {
+		from {
+			opacity: 0;
+			scale: var(--scale, 1);
+			translate: var(--translate, 0 0);
+		}
+		to {
+			opacity: 1;
+			scale: 1;
+			translate: 0 0;
+		}
+	}
+
+	.anim-fade {
+		animation: fade .2s ease-in-out var(--delay, 0s) forwards;
+	}
+	.anim-fade-r {
+		@apply anim-fade;
+		--translate: -1rem 0;
+	}
+	.anim-fade-l {
+		@apply anim-fade;
+		--translate: 1rem 0;
+	}
+	.anim-fade-b {
+		@apply anim-fade;
+		--translate: 0 -1rem;
+	}
 
 	.anim-emoji {
 		position: relative;

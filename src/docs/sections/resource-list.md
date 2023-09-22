@@ -1,5 +1,5 @@
 ---
-title: Resource list
+title: Resource List
 file: sections/resource-list.liquid
 showSchema: true
 images:
