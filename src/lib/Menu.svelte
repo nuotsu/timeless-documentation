@@ -10,7 +10,7 @@
 
 					<li>
 						<a {href} class={twMerge(
-							'block max-w-max border-l border-neutral-200 pl-2 ml-1 hover:border-accent',
+							'block border-l border-neutral-200 pl-2 ml-1 hover:border-accent',
 							linkClass,
 							pathname === href && 'font-bold border-accent'
 						)}>

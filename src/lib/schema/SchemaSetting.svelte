@@ -15,7 +15,7 @@
 					<b>{setting.content}</b>
 
 					{#if setting.info}
-						<p class="text-xs whitespace-normal">{setting.info}</p>
+						<p class="text-xs whitespace-normal">{@html parse(setting.info)}</p>
 					{/if}
 				</th>
 			</tr>
@@ -49,7 +49,7 @@
 				{/if}
 
 				{#if hasInfo}
-					<td class="whitespace-normal text-xs">{setting.info || ''}</td>
+					<td class="whitespace-normal text-xs">{@html parse(setting.info || '')}</td>
 				{/if}
 
 				{#if hasDefault}
@@ -72,6 +72,8 @@
 </style>
 
 <script lang="ts">
+	import { parse } from 'marked'
+
 	export let settings: Shopify.SchemaSetting[]
 
 	$: settings

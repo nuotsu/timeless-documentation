@@ -16,7 +16,7 @@ Additional key features of _Timeless_ include:
 - [90+/100 Lighthouse performance scores]()
 - semantic HTML markup for better SEO
 - marketing-focused sections and components, such as:
-	- [scheduled announcements]()
+	- [scheduled announcements](/docs/sections/announcement)
 	- [scheduled promo hero sections]()
 	- [customizable call-to-actions]()
 

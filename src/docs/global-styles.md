@@ -15,7 +15,7 @@ _Theme Editor > Theme Settings > Styles_
 
 You'll find yourself setting text and background colors in multiple sections across your store. To make this easier, _Timeless_ utilizes [colors schemes](https://help.shopify.com/en/manual/online-store/themes/theme-structure/color-scheme). Most sections have the option to choose from a list of color schemes you define in the theme settings.
 
-It is possible to use [brand colors]() in your color schemes, which can be configured under Store Settings > Brand > Colors.
+It is possible to use [brand colors]() in your color schemes, which can be configured under Store Settings > Brand > Colors in your Shopify Admin.
 
 _Timeless_'s color scheme properties include:
 

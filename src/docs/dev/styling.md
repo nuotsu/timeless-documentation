@@ -1,5 +1,4 @@
 ---
-order: 2
 title: Styling
 file: snippets/tailwind.liquid
 ---

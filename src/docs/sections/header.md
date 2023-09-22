@@ -19,3 +19,7 @@ Particular parent-level menu items can be made a "mega menu," or an expanded dro
 ## Featured Links
 
 Particular nested menu items under mega menus can be made a "featured link" with an image. To do so, add a **Featured Link** block and set the text to the exact text of the parent-level menu item. Depending on the link, the theme will attempt to display a matching image. This can be easily overwritten by uploading an image in the block settings.
+
+![Header blocks](/assets/sections/header-blocks.webp)
+
+_Header blocks_

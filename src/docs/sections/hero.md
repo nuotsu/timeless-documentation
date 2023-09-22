@@ -10,4 +10,4 @@ images:
 
 ## Use case
 
-The *Hero* section displays textual content and an image with optional call-to-action buttons. Customizations include a color scheme, text alignment, image position.
+The _Hero_ section displays textual content and an image with optional call-to-action buttons. Customizations include a color scheme, text alignment, image position.

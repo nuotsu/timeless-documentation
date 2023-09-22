@@ -1,5 +1,4 @@
 ---
-order: 3
 title: Icons
 file: snippets/icon.liquid
 ---
