@@ -1,6 +1,6 @@
 <form method="post" action="https://formspree.io/f/myyqnnqr" class="grid md:grid-cols-2 gap-4">
 	<label>
-		<span class="technical text-xs">Your name</span>
+		<span class="technical text-xs">Name</span>
 		<input
 			class="input w-full"
 			name="name"
@@ -24,7 +24,7 @@
 	</label>
 
 	<label class="col-span-full">
-		<span class="technical text-xs">Message</span>
+		<span class="technical text-xs">How can we help?</span>
 		<textarea
 			class="input w-full"
 			name="message"

@@ -3,11 +3,11 @@
 </svelte:head>
 
 <div class="grid gap-8">
-	<hgroup class="grid gap-2 text-center py-4">
+	<hgroup class="grid gap-3 text-center py-4">
 		<p class="technical text-xs">A modern Shopify Theme</p>
 		<h1 class="flex flex-wrap gap-x-3 items-center justify-center h0">
 			<strong>🕰️</strong>
-			Timeless
+			<span class="text-gradient">Timeless</span>
 		</h1>
 		<p>Built for merchants <em>and</em> developers</p>
 	</hgroup>
@@ -25,7 +25,7 @@
 
 	<section class="w-full -mt-24 md:px-4">
 		<Menu
-			className="!flex flex-wrap gap-x-12 backdrop-blur p-4 bg-white/80 rounded"
+			className="!flex flex-wrap backdrop-blur p-4 bg-white/80 rounded"
 			linkClass="link"
 		/>
 	</section>
@@ -34,7 +34,7 @@
 
 	<section class="grid md:grid-cols-2 gap-8 items-center">
 		<hgroup class="grid gap-2 text-center">
-			<h2 class="h2">🤔 Need help?</h2>
+			<h2 class="h1">🤔 Need help?</h2>
 			<p>Feel free to <a class="link" href="/docs/support">reach out</a>!</p>
 		</hgroup>
 

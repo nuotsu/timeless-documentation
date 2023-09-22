@@ -21,7 +21,7 @@
 		padding-inline: .25em .5em;
 		font-size: smaller;
 		text-decoration: inherit;
-		@apply bg-canvas rounded;
+		@apply bg-accent/10 border-l-4 border-accent/30 rounded;
 	}
 
 	pre {
@@ -76,7 +76,7 @@
 		align-items: center;
 		justify-content: center;
 		padding: 0.5em 1em;
-		@apply disabled:grayscale border border-transparent transition-all rounded-sm;
+		@apply disabled:grayscale border border-transparent transition-all rounded;
 	}
 	._focus {
 		@apply outline-none focus:ring ring-accent/20;
@@ -92,7 +92,7 @@
 
 	.input {
 		padding: .25em .5em;
-		@apply _focus border rounded-sm hover:border-accent focus:border-accent;
+		@apply _focus border rounded hover:border-accent focus:border-accent;
 	}
 }
 
@@ -100,6 +100,10 @@
 	.full-width {
 		width: 100vw;
 		margin-inline: calc(50% - 50vw);
+	}
+
+	.text-gradient {
+		@apply bg-clip-text text-transparent bg-gradient-to-r from-ink/5 to-ink;
 	}
 
 	.carousel {

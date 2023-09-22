@@ -1,6 +1,6 @@
 <svelte:window on:resize={closedOnMobile ? closeOnMobile : undefined} />
 
-<nav class="grid gap-2 {className}">
+<nav class="grid gap-y-3 gap-x-12 {className}">
 	{#each menu as { dir, metadata, entries }}
 		<details {open}>
 			<summary class="technical text-sm text-neutral-400 hover:text-accent">{metadata.title}</summary>
