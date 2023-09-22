@@ -7,8 +7,7 @@
         <thead>
           <tr class="border-none">
             <th class="text-center font-normal" colspan="4">
-              <strong>{block.name}</strong>:
-              <code>{block.type}</code>
+              For <strong>{block.name}</strong> block
             </th>
           </tr>
         </thead>

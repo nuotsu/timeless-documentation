@@ -54,6 +54,7 @@
 	._h {
 		text-wrap: balance;
 	}
+	.h0 { @apply _h text-4xl font-bold; }
 	.h1 { @apply _h text-3xl font-bold; }
 	.h2 { @apply _h text-2xl font-bold; }
 	.h3 { @apply _h text-xl font-bold; }

@@ -5,7 +5,7 @@ const octokit = new Octokit({
 	auth: PUBLIC_GITHUB_TOKEN
 })
 
-async function getContent(file?: string) {
+export async function getContent(file?: string, searchValue: RegExp = /[\n\t]/g) {
 	if (!file) return
 
 	const content = await octokit.rest.repos.getContent({
@@ -20,7 +20,7 @@ async function getContent(file?: string) {
 
 	if (content.status !== 200) return
 
-	return atob((content.data as any).content).replace(/[\n\t]/g, '')
+	return atob((content.data as any).content).replace(searchValue, '')
 }
 
 export async function getSectionSchema(file?: string) {

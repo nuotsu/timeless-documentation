@@ -13,7 +13,7 @@ Like all other themes, _Timeless_ comes with a number of core templates and [sec
 Unlike most other themes, _Timeless_ utilizes a number of advanced and newest features of Shopify, like [product filters](https://help.shopify.com/en/manual/online-store/themes/customizing-themes/storefront-filters) and [color schemes](/docs/global-styles#color-schemes), to have granual control over your store's look and feel and provide a better shopping experience for your customers.
 
 Additional key features of _Timeless_ include:
-- [Near-perfect Lighthouse scores](/docs/dev/lighthouse)
+- [Near-perfect Lighthouse scores](/docs/lighthouse)
 - semantic HTML markup for better SEO
 - marketing-focused sections and components, such as:
 	- [scheduled content](/docs/dev/scheduling)

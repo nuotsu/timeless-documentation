@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit'
 import type { PageLoad } from './$types'
-import { getSectionSchema, getSettingSchema } from '$lib/getSchema'
+import { getSectionSchema, getSettingSchema } from '$lib/getGitHub'
 
 export const load: PageLoad = async ({ params }) => {
 	const slug =

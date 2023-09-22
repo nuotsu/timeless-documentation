@@ -3,12 +3,14 @@
 </svelte:head>
 
 <div class="grid gap-8">
-	<section class="text-center">
-		<h1 class="flex flex-wrap gap-x-3 items-center justify-center h1">
+	<hgroup class="grid gap-2 text-center py-4">
+		<p class="technical text-xs">A modern Shopify Theme</p>
+		<h1 class="flex flex-wrap gap-x-3 items-center justify-center h0">
 			<strong>🕰️</strong>
-			Timeless Shopify Theme
+			Timeless
 		</h1>
-	</section>
+		<p>Built for merchants <em>and</em> developers</p>
+	</hgroup>
 
 	<figure class="<md:full-width">
 		<img
@@ -21,8 +23,11 @@
 		>
 	</figure>
 
-	<section class="w-full max-w-sm mx-auto -mt-24 backdrop-blur-lg p-4 bg-white/70 rounded">
-		<Menu linkClass="link" />
+	<section class="w-full -mt-24 md:px-4">
+		<Menu
+			className="!flex flex-wrap gap-x-12 backdrop-blur p-4 bg-white/80 rounded"
+			linkClass="link"
+		/>
 	</section>
 
 	<hr>

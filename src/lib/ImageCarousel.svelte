@@ -1,4 +1,4 @@
-<figure class="carousel gap-4 items-center p-4 bg-canvas rounded">
+<figure class="carousel gap-4 items-center p-4 bg-canvas rounded min-h-[10rem]">
 	{#each images as src}
 		<img
 			class="max-w-[90%] rounded shadow-md"

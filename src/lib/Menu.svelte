@@ -1,6 +1,6 @@
 <svelte:window on:resize={closedOnMobile ? closeOnMobile : undefined} />
 
-<nav class="grid gap-2">
+<nav class="grid gap-2 {className}">
 	{#each menu as { dir, metadata, entries }}
 		<details {open}>
 			<summary class="technical text-sm text-neutral-400 hover:text-accent">{metadata.title}</summary>
@@ -30,6 +30,7 @@
 	import { twMerge } from 'tailwind-merge'
 
 	export let
+		className: string = '',
 		linkClass: string | undefined = undefined,
 		closedOnMobile: boolean = false
 
