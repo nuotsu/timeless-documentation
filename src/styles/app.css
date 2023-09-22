@@ -9,7 +9,7 @@
 
 	html {
 		scroll-behavior: smooth;
-		@apply bg-canvas text-ink;
+		@apply bg-canvas text-ink caret-accent;
 	}
 
 	summary {
@@ -42,6 +42,10 @@
 	tr:hover code {
 		@apply bg-white;
 	}
+
+	label {
+		cursor: pointer;
+	}
 }
 
 @layer components {
@@ -64,8 +68,30 @@
 
 	/* ctas */
 
+	._btn {
+		cursor: pointer;
+		display: inline-flex;
+		gap: .5em;
+		align-items: center;
+		justify-content: center;
+		padding: 0.5em 1em;
+		@apply disabled:grayscale border border-transparent transition-all rounded-sm;
+	}
+	._focus {
+		@apply outline-none focus:ring ring-accent/20;
+	}
+
+	.action {
+		@apply _btn _focus anim-emoji bg-accent text-white hover:scale-105 shadow-md hover:shadow-lg;
+	}
+
 	.link {
 		@apply text-accent underline decoration-dotted hover:decoration-solid;
+	}
+
+	.input {
+		padding: .25em .5em;
+		@apply _focus border rounded-sm hover:border-accent focus:border-accent;
 	}
 }
 
@@ -114,5 +140,28 @@
 	.rte > p:has(> img:only-child) + p:has(> em:only-child) {
 		text-align: center;
 		@apply mt-2 text-neutral-400 text-sm;
+	}
+
+	/* anims */
+
+	.anim-emoji {
+		position: relative;
+	}
+	.anim-emoji::after {
+		content: var(--anim-emoji, '👍');
+		position: absolute;
+		z-index: -1;
+		inset: 50% auto auto 100%;
+		translate: -200% -50%;
+		rotate: -8deg;
+		@apply transition-[translate,rotate,scale,opacity] drop-shadow;
+	}
+	.anim-emoji:hover::after {
+		translate: -25% -50%;
+		rotate: 8deg;
+	}
+	.anim-emoji:not(:hover)::after {
+		opacity: 0;
+		scale: 0;
 	}
 }

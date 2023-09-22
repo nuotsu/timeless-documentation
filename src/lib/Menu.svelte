@@ -3,7 +3,8 @@
 <nav class="grid gap-2">
 	{#each menu as { dir, metadata, entries }}
 		<details {open}>
-			<summary class="technical text-sm text-neutral-400">{metadata.title}</summary>
+			<summary class="technical text-sm text-neutral-400 hover:text-accent">{metadata.title}</summary>
+
 			<ul class="grid">
 				{#each sort(entries) as entry}
 					{@const href = `${dir}/${entry.slug}`}
