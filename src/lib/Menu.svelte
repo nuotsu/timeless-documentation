@@ -3,7 +3,7 @@
 <nav class="grid gap-y-3 gap-x-12 {className}">
 	{#each menu as { dir, metadata, entries }}
 		<details {open}>
-			<summary class="technical text-sm text-neutral-400 hover:text-accent">{metadata.title}</summary>
+			<summary class="technical text-xs text-neutral-400 hover:text-accent">{metadata.title}</summary>
 
 			<ul class="grid anim-fade-b">
 				{#each sort(entries) as entry}

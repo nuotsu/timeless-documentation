@@ -4,7 +4,7 @@
 		<strong>Timeless Shopify</strong>
 	</a>
 
-	<Menu linkClass="hover:underline decoration-dotted" closedOnMobile />
+	<Menu linkClass="hover:underline decoration-dotted text-sm" closedOnMobile />
 </header>
 
 <main class="grow flex flex-col">
