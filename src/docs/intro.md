@@ -30,7 +30,8 @@ Unlike most other themes, _Timeless_ is a developer-friendly repo that uses [Tai
 Additional key features of _Timeless_ include:
 - empty `/assets` directory -- No JS, CSS, images, fonts ... nothing!
 - ready-to-use helper classes and components:
-	- a native CSS (`.carousel`) class and [Swiper](https://swiperjs.com) integration for carousel/slider components
+	- a native CSS ([`.carousel`](/docs/dev/carousel)) class and [Swiper](https://swiperjs.com) integration for carousel/slider components
 	- [`icon.liquid` snippet](/docs/dev/icons) for easy SVG icon rendering
+	- [`.rte`](/docs/dev/richtext) utility class for richtext formatting
 
 ... and much more.

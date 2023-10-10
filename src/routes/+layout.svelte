@@ -12,7 +12,7 @@
 		<slot></slot>
 	</div>
 
-	<p class="sticky bottom-0 p-4 text-center text-xs text-neutral-400">
+	<p class="p-4 text-center text-xs text-neutral-400">
 		&copy; {new Date().getFullYear()} All rights reserved. Timeless Shopify Theme by <a href="https://nuotsu.dev">nuotsu</a>.
 	</p>
 </main>
