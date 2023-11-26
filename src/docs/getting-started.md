@@ -3,7 +3,7 @@ order: 3
 title: Getting Started
 ---
 
-_Timeless_ is available on the official [Shopify Theme Store]().
+_Timeless_ is available on [Envato Market (Theme Forest)]().
 
 We recommend the following steps to get started with the theme:
 
